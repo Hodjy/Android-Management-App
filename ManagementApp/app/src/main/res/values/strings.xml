@@ -1,4 +1,5 @@
 <resources>
+    # Main activity strings:
     <string name="app_name">ManagementApp</string>
     <string name="gps_text">Find where I am</string>
     <string name="calendar_text">Manage calendar</string>
@@ -6,4 +7,10 @@
     <string name="alarm_clock_text">Set an alarm</string>
     <string name="add_contact_text">Add contact</string>
     <string name="phone_statistics_text">Phone statistics</string>
+
+    # Message activity strings:
+    <string name="message_to_send_hint">Enter your message here</string>
+    <string name="send_message">Send</string>
+
+
 </resources>

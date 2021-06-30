@@ -21,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="3"
-        android:rowCount="2">
+        android:rowCount="2"
+        android:id="@+id/appsGridLayout">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
             android:orientation="vertical"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:id="@+id/gpsLayout">
 
             <ImageButton
                 android:id="@+id/gpsImageButton"
@@ -54,7 +56,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:id="@+id/calendarLayout">
 
             <ImageButton
                 android:id="@+id/calendarImageButton"
@@ -78,7 +81,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:id="@+id/sendMessageLayout">
 
             <ImageButton
                 android:id="@+id/messageImageButton"
@@ -103,7 +107,8 @@
             android:orientation="vertical"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:id="@+id/alarmClockLayout">
 
             <ImageButton
                 android:id="@+id/alarmClockImageButton"
@@ -127,7 +132,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:id="@+id/addContactLayout">
 
             <ImageButton
                 android:id="@+id/addContactImageButton"
@@ -151,7 +157,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:id="@+id/phoneStatisticsLayout">
 
             <ImageButton
                 android:id="@+id/phoneStatisticsImageButton"
