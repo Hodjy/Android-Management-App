@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -30,15 +29,12 @@
             android:orientation="vertical"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
             android:id="@+id/gpsLayout">
 
             <ImageButton
                 android:id="@+id/gpsImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_row="0"
-                android:layout_column="1"
                 android:background="@drawable/icon_gps"
                 android:scaleType="fitXY"/>
 
@@ -89,7 +85,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="@drawable/icon_message"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -107,7 +103,6 @@
             android:orientation="vertical"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
             android:id="@+id/alarmClockLayout">
 
             <ImageButton
