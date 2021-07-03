@@ -8,14 +8,14 @@
     tools:context=".MainActivity">
 
     <TextClock
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textClock"
         android:format12Hour="hh:mm:ss a"
         android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
-    
 
+    //TODO CHANGE TO TABLE
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,11 +31,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/gpsLayout">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/gpsImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_gps"
+                android:src="@drawable/icon_gps"
                 android:scaleType="fitXY"/>
 
             <TextView
@@ -55,11 +55,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/calendarLayout">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/calendarImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_calender"
+                android:src="@drawable/icon_calender"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -80,11 +80,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/sendMessageLayout">
 
-            <ImageButton
-                android:id="@+id/messageImageButton"
+            <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_message"
+                android:id="@+id/messageImageButton"
+                android:src="@drawable/icon_message"
                 android:scaleType="fitXY"/>
 
             <TextView
@@ -105,11 +105,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/alarmClockLayout">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/alarmClockImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_alarm_clock"
+                android:src="@drawable/icon_alarm_clock"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -130,11 +130,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/addContactLayout">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/addContactImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_add_contact"
+                android:src="@drawable/icon_add_contact"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -155,11 +155,11 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/phoneStatisticsLayout">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/phoneStatisticsImageButton"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/icon_phone_statistics"
+                android:src="@drawable/icon_phone_statistics"
                 android:scaleType="fitXY" />
 
             <TextView

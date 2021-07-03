@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO HANDLE RETURN WITH TOAST & check about clickable layout 
-                Intent intent = new Intent(v.getContext(), MessageActivity.class);
+                //TODO HANDLE RETURN WITH TOAST
+                Intent intent = new Intent(MainActivity.this , MessageActivity.class);
                 v.getContext().startActivity(intent);
             }
         });

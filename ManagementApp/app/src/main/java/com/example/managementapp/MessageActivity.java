@@ -23,15 +23,16 @@ public class MessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message);
 
         messageEditText = findViewById(R.id.message_to_send);
-        sendTextButton = (Button)findViewById(R.id.send_text_btn);
+        sendTextButton = (Button) findViewById(R.id.send_text_btn);
 
-        sendTextButton.setOnClickListener(view ->  {
-            //TODO CHECK ABOUT THE this
-            String message = messageEditText.getText().toString();
-            ShareCompat.IntentBuilder.from(this).setType("text/plain").setText(message)
-                    .setChooserTitle("text can be shared using the following: ")
-                    .startChooser();
+        sendTextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String message = messageEditText.getText().toString();
+                ShareCompat.IntentBuilder.from(MessageActivity.this).setType("text/plain").setText(message)
+                        .setChooserTitle("text can be shared using the following: ")
+                        .startChooser();
+            }
         });
     }
-
 }

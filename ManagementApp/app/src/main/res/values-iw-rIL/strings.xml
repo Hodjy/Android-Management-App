@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ManagementApp</string>
+    <string name="gps_text">היכן אני</string>
+    <string name="calendar_text">נהל יומן</string>
+    <string name="message_text">שלח הודעה</string>
+    <string name="add_contact_text">הוסף איש קשר</string>
+    <string name="phone_statistics_text">נתוני הפלאפון</string>
+    <string name="message_to_send_hint">כתוב כאן את ההודעה</string>
+    <string name="send_message">שלח</string>
+    <string name="alarm_clock_text">קבע שעון מעורר</string>
+</resources>
