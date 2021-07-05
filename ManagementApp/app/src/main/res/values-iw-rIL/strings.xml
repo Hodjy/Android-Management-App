@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ManagementApp</string>
+    <string name="app_name">אפליקציית ניהול</string>
     <string name="gps_text">היכן אני</string>
     <string name="calendar_text">נהל יומן</string>
     <string name="message_text">שלח הודעה</string>
@@ -21,8 +21,9 @@
     <string name="calendar_activity_enterEventDetails">הכנס את פרטי האירוע:</string>
     <string name="calendar_activity_saveEvent">שמור</string>
     <string name="calender_activityTitle">לוח אירועים</string>
-    <string name="addContacts_activityTitle">קשר חדש</string>
+    <string name="addContacts_activityTitle">איש קשר חדש</string>
     <string name="alarmClock_activityTitle">שעון מעורר</string>
-    <string name="statistic_activityTitle">סטטיסטיקה</string>
+    <string name="statistic_activityTitle">סטטיסטיקות</string>
     <string name="message_activityTitle">הודעה</string>
+    <string name="calendar_activity_instructions">קבע אירוע חדש:</string>
 </resources>

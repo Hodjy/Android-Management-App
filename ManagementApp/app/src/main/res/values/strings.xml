@@ -15,20 +15,30 @@
 
     # Statistic activity strings:
     <string name="statics_activity_title">Your Statistics:</string>
+
+    # AlarmClock activity strings:
     <string name="alarm_clock_activity_title">Choose the time:</string>
     <string name="alarm_clock_activity_button_save">Save new alarm</string>
+
+    # AddContact activity strings:
     <string name="add_contact_activity_title">Add a new contact:</string>
     <string name="add_contact_activity_first_name">First Name:</string>
     <string name="add_contact_activity_last_name">Last Name:</string>
     <string name="add_contact_activity_number">Phone Number:</string>
     <string name="add_contact_activity_button_save">Save</string>
+
+    # Calendar activity strings:
+    <string name="calendar_activity_instructions">Schedule a new Event:</string>
     <string name="calendar_activity_enterEventDetails">Enter the event details:</string>
     <string name="calendar_activity_saveEvent">Save</string>
     <string name="calender_activityTitle">Calendar Event</string>
+
+    #Activitys Titles String
     <string name="addContacts_activityTitle">New Contact</string>
     <string name="alarmClock_activityTitle">Alarm Clock</string>
     <string name="statistic_activityTitle">Statistics</string>
     <string name="message_activityTitle">Message</string>
+
 
 
 </resources>
