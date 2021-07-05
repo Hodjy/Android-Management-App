@@ -11,6 +11,7 @@
     # Message activity strings:
     <string name="message_to_send_hint">Enter your message here</string>
     <string name="send_message">Send</string>
+    <string name="next_events_msg">Your next events:</string>
 
 
 </resources>

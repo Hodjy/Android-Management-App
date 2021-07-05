@@ -9,4 +9,5 @@
     <string name="message_to_send_hint">כתוב כאן את ההודעה</string>
     <string name="send_message">שלח</string>
     <string name="alarm_clock_text">קבע שעון מעורר</string>
+    <string name="next_events_msg">האירועים הבאים שלך:</string>
 </resources>
