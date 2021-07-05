@@ -24,4 +24,5 @@
     <string name="addContacts_activityTitle">קשר חדש</string>
     <string name="alarmClock_activityTitle">שעון מעורר</string>
     <string name="statistic_activityTitle">סטטיסטיקה</string>
+    <string name="message_activityTitle">הודעה</string>
 </resources>

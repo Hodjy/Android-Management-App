@@ -28,6 +28,7 @@
     <string name="addContacts_activityTitle">New Contact</string>
     <string name="alarmClock_activityTitle">Alarm Clock</string>
     <string name="statistic_activityTitle">Statistics</string>
+    <string name="message_activityTitle">Message</string>
 
 
 </resources>
