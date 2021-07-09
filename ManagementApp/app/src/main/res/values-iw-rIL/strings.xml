@@ -26,4 +26,6 @@
     <string name="statistic_activityTitle">סטטיסטיקות</string>
     <string name="message_activityTitle">הודעה</string>
     <string name="calendar_activity_instructions">קבע אירוע חדש:</string>
+    <string name="message_activity_howToSpeak">בבקשה לדבר לאט וברור</string>
+    <string name="message_activity_emptyMsg">ההודעה ריקה, בבקשה לכתוב הודעה</string>
 </resources>
