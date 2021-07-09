@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout sendMessageLayoutRef = findViewById(R.id.sendMessageLayout);
         LinearLayout statisticLayoutRef = findViewById(R.id.phoneStatisticsLayout);
         LinearLayout calendarLayoutRef = findViewById(R.id.calendarLayout);
+        LinearLayout callLayoutRef = findViewById(R.id.callLayout);
 
 
 
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO HANDLE RETURN WITH TOAST
                 Intent intent = new Intent(MainActivity.this , MessageActivity.class);
                 startActivity(intent);
             }
@@ -48,7 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        callLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CallActivity.class);
+                startActivity(intent);
+            }
+        });
     }
-
-
 }

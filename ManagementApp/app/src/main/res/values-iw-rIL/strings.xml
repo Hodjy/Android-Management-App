@@ -31,4 +31,5 @@
     <string name="settings_text">הגדרות</string>
     <string name="phone_data_text">נתוני הפלאפון</string>
     <string name="calendar_activity_enterEventTitle">הכנס את כותרת האירוע:</string>
+    <string name="call_activityTitle">טלפון</string>
 </resources>

@@ -8,11 +8,14 @@
     <string name="add_contact_text">Add contact</string>
     <string name="phone_data_text">Phone data</string>
     <string name="next_events_msg">Your next events:</string>
+    <string name="call_text">Call</string>
+    <string name="settings_text">Settings</string>
 
     # Message activity strings:
     <string name="message_to_send_hint">Enter your message here</string>
     <string name="send_message">Send</string>
     <string name="message_activity_howToSpeak">Please speak slowly and clearly</string>
+    <string name="message_activity_emptyMsg">Your message is empty please enter a message</string>
 
     # Statistic activity strings:
     <string name="statics_activity_title">Your Statistics:</string>
@@ -32,17 +35,15 @@
     <string name="calendar_activity_instructions">Schedule a new Event:</string>
     <string name="calendar_activity_enterEventDetails">Enter the event details:</string>
     <string name="calendar_activity_saveEvent">Save</string>
-    <string name="calender_activityTitle">Calendar Event</string>
+    <string name="calendar_activity_enterEventTitle">Enter Event Title:</string>
+
 
     #Activitys Titles String
     <string name="addContacts_activityTitle">New Contact</string>
     <string name="alarmClock_activityTitle">Alarm Clock</string>
     <string name="statistic_activityTitle">Statistics</string>
     <string name="message_activityTitle">Message</string>
-    <string name="message_activity_emptyMsg">Your message is empty please enter a message</string>
-    <string name="call_text">Call</string>
-    <string name="settings_text">Settings</string>
-    <string name="calendar_activity_enterEventTitle">Enter Event Title:</string>
-
+    <string name="calender_activityTitle">Calendar Event</string>
+    <string name="call_activityTitle">Phone</string>
 
 </resources>

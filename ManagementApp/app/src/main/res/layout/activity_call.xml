@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@drawable/editext_style"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/call_activity_phone_textView"/>
+
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_2"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_3"/>
+
+
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_4"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="5"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_5"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="6"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_6"/>
+
+
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="7"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_7"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="8"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_8"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="9"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_9"/>
+
+
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="*"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_star"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_0"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="#"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_ladder"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/reg_btn_style"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/call_activity_btn_plus"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:background="@drawable/call_btn_style"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:id="@+id/call_activity_call_btn"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="27"
+            android:background="@drawable/reg_btn_style"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:visibility="invisible"
+            android:id="@+id/call_activity_settings_btn"
+            android:scaleType="center"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="27"
+            android:background="@drawable/reg_btn_style"
+            android:src="@drawable/ic_baseline_backspace_24"
+            android:id="@+id/call_activity_delete_btn"/>
+    </LinearLayout>
+
+</LinearLayout>
