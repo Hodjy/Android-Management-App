@@ -73,6 +73,5 @@ public class MessageActivity extends AppCompatActivity {
                 ArrayList<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 messageEditText.setText(results.get(0));
             }
-
         }
 }

@@ -2,13 +2,12 @@
 <resources>
     <string name="app_name">אפליקציית ניהול</string>
     <string name="gps_text">היכן אני</string>
-    <string name="calendar_text">נהל יומן</string>
+    <string name="calendar_text">לוח שנה</string>
     <string name="message_text">שלח הודעה</string>
     <string name="add_contact_text">הוסף איש קשר</string>
-    <string name="phone_statistics_text">נתוני הפלאפון</string>
     <string name="message_to_send_hint">כתוב כאן את ההודעה</string>
     <string name="send_message">שלח</string>
-    <string name="alarm_clock_text">קבע שעון מעורר</string>
+    <string name="alarm_clock_text">קבע שעון</string>
     <string name="next_events_msg">האירועים הבאים שלך:</string>
     <string name="statics_activity_title">הסטטיסטיקות שלך:</string>
     <string name="alarm_clock_activity_title">בחר זמן:</string>
@@ -28,4 +27,8 @@
     <string name="calendar_activity_instructions">קבע אירוע חדש:</string>
     <string name="message_activity_howToSpeak">בבקשה לדבר לאט וברור</string>
     <string name="message_activity_emptyMsg">ההודעה ריקה, בבקשה לכתוב הודעה</string>
+    <string name="call_text">התקשר</string>
+    <string name="settings_text">הגדרות</string>
+    <string name="phone_data_text">נתוני הפלאפון</string>
+    <string name="calendar_activity_enterEventTitle">הכנס את כותרת האירוע:</string>
 </resources>
