@@ -4,7 +4,7 @@
     <string name="gps_text">היכן אני</string>
     <string name="calendar_text">לוח שנה</string>
     <string name="message_text">שלח הודעה</string>
-    <string name="add_contact_text">הוסף איש קשר</string>
+    <string name="add_contact_text">הוסף קשר</string>
     <string name="message_to_send_hint">כתוב כאן את ההודעה</string>
     <string name="send_message">שלח</string>
     <string name="alarm_clock_text">קבע שעון</string>

@@ -10,16 +10,17 @@ import android.widget.LinearLayout;
 import android.widget.TextClock;
 
 public class MainActivity extends AppCompatActivity {
-    private LinearLayout sendMessageLayoutRef;
-    private LinearLayout statisticLayoutRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sendMessageLayoutRef = findViewById(R.id.sendMessageLayout);
-        statisticLayoutRef = findViewById(R.id.phoneStatisticsLayout);
+        LinearLayout sendMessageLayoutRef = findViewById(R.id.sendMessageLayout);
+        LinearLayout statisticLayoutRef = findViewById(R.id.phoneStatisticsLayout);
+        LinearLayout calendarLayoutRef = findViewById(R.id.calendarLayout);
+
+
 
 
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //TODO HANDLE RETURN WITH TOAST
                 Intent intent = new Intent(MainActivity.this , MessageActivity.class);
-                v.getContext().startActivity(intent);
+                startActivity(intent);
             }
         });
 
@@ -35,10 +36,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this , StatisticActivity.class);
-                v.getContext().startActivity(intent);
+                startActivity(intent);
             }
         });
 
+
+        calendarLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
