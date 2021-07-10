@@ -10,6 +10,7 @@
     <string name="next_events_msg">Your next events:</string>
     <string name="call_text">Call</string>
     <string name="settings_text">Settings</string>
+    <string name="main_activity_turnOnGps">Please turn on your GPS</string>
 
     # Message activity strings:
     <string name="message_to_send_hint">Enter your message here</string>
@@ -45,5 +46,6 @@
     <string name="message_activityTitle">Message</string>
     <string name="calender_activityTitle">Calendar Event</string>
     <string name="call_activityTitle">Phone</string>
+
 
 </resources>

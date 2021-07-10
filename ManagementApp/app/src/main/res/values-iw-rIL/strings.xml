@@ -32,4 +32,5 @@
     <string name="phone_data_text">נתוני הפלאפון</string>
     <string name="calendar_activity_enterEventTitle">הכנס את כותרת האירוע:</string>
     <string name="call_activityTitle">טלפון</string>
+    <string name="main_activity_turnOnGps">בבקשה לפעיל את המיקום</string>
 </resources>

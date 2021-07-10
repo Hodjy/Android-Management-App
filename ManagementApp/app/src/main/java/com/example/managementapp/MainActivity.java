@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextClock;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout statisticLayoutRef = findViewById(R.id.phoneStatisticsLayout);
         LinearLayout calendarLayoutRef = findViewById(R.id.calendarLayout);
         LinearLayout callLayoutRef = findViewById(R.id.callLayout);
+        LinearLayout gpsLayoutRef = findViewById(R.id.gpsLayout);
 
 
 
@@ -56,5 +60,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        gpsLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE );
+
+                if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+                {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:"));
+                    startActivity(intent);
+                }
+                else{
+                    String message = getResources().getString(R.string.main_activity_turnOnGps);
+                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
     }
 }
