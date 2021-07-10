@@ -19,6 +19,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
+import java.util.Date;
 
 public class CalendarActivity extends AppCompatActivity {
     private String m_date;
@@ -33,10 +34,17 @@ public class CalendarActivity extends AppCompatActivity {
         EditText eventContentsET = findViewById(R.id.calendar_eventContentsET);
         Button saveBtn = findViewById(R.id.calendar_saveBtn);
 
+        //TODO: Change the format
+        //date initialization
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+        m_date = sdf.format(new Date(calendar.getDate()));
+        //
+
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                m_date = year + "/" + month + "/" + dayOfMonth;
+                m_date = String.format("%04d/%02d/%02d", year, month, dayOfMonth);
+                //m_date = year + "/" + month + "/" + dayOfMonth;
                 Toast.makeText(CalendarActivity.this, m_date, Toast.LENGTH_LONG).show();
             }
         });
@@ -48,7 +56,8 @@ public class CalendarActivity extends AppCompatActivity {
             {
                 String eventTitleText = eventTitleET.getText().toString();
                 String eventContentText = eventContentsET.getText().toString();
-                String time = timePicker.getHour() + ":" + timePicker.getMinute() + ":00";
+                String time = String.format("%02d:%02d:00", timePicker.getHour() , timePicker.getMinute());
+                //String time = timePicker.getHour() + ":" + timePicker.getMinute() + yyyy/MM/dd":00";
 
                 m_date = m_date + " " + time;
                 LocalDateTime ldt = LocalDateTime.parse(m_date, DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"));
@@ -66,6 +75,8 @@ public class CalendarActivity extends AppCompatActivity {
                         intent.putExtra(CalendarContract.Events.ALL_DAY, true);
                         intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, millis);
 
+
+
                         startActivity(intent);
                     }
                     else
@@ -79,7 +90,6 @@ public class CalendarActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
+
 }
