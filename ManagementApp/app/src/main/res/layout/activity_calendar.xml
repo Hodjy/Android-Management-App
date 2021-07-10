@@ -29,18 +29,33 @@
                 android:hint="@string/calendar_activity_enterEventTitle"
                 android:id="@+id/calendar_eventTitleET"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:hint="@string/calendar_activity_enterEventDate" />
+
             <CalendarView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="5"
                 android:id="@+id/calendar_inputCalendar"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:hint="@string/calendar_activity_enterEventStartingTime" />
+
             <TimePicker
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:timePickerMode="spinner"
-                android:id="@+id/calendar_timepicker"/>
+                android:id="@+id/calendar_timepickerStartTime"/>
+
 
             <EditText
                 android:layout_width="match_parent"

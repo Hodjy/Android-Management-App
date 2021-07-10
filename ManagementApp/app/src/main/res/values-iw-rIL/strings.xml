@@ -33,4 +33,9 @@
     <string name="calendar_activity_enterEventTitle">הכנס את כותרת האירוע:</string>
     <string name="call_activityTitle">טלפון</string>
     <string name="main_activity_turnOnGps">בבקשה לפעיל את המיקום</string>
+    <string name="calendar_activity_enterEventStartingTime">הכנס זמן תחילת האירוע:</string>
+    <string name="calendar_activity_enterEventEndTime">הכנס זמן סוף האירוע:</string>
+    <string name="calendar_activity_enterEventDate">הכנס תאריך אירוע:</string>
+    <string name="dateFormatting">dd/MM/yyyy</string>
+    <string name="timeFormatting">HH:mm</string>
 </resources>
