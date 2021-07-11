@@ -38,4 +38,11 @@
     <string name="calendar_activity_enterEventDate">הכנס תאריך אירוע:</string>
     <string name="dateFormatting">dd/MM/yyyy</string>
     <string name="timeFormatting">HH:mm</string>
+    <string name="alarmClock_day1">א</string>
+    <string name="alarmClock_day2">ב</string>
+    <string name="alarmClock_day3">ג</string>
+    <string name="alarmClock_day4">ד</string>
+    <string name="alarmClock_day5">ה</string>
+    <string name="alarmClock_day6">ו</string>
+    <string name="alarmClock_day7">ש</string>
 </resources>

@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ManagementApp">
+        android:theme="@style/Theme.Brilliant">
         <activity android:name=".CallActivity"
             android:label="@string/call_activityTitle"
             android:parentActivityName=".MainActivity">

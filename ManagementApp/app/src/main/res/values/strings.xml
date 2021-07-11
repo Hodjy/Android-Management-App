@@ -51,6 +51,13 @@
     <string name="calendar_activity_enterEventDate">Enter event date:</string>
     <string name="dateFormatting">MM/dd/yyyy</string>
     <string name="timeFormatting">HH:mm</string>
+    <string name="alarmClock_day1">Su</string>
+    <string name="alarmClock_day2">M</string>
+    <string name="alarmClock_day3">Tu</string>
+    <string name="alarmClock_day4">W</string>
+    <string name="alarmClock_day5">Th</string>
+    <string name="alarmClock_day6">F</string>
+    <string name="alarmClock_day7">Sa</string>
 
 
 </resources>

@@ -11,4 +11,11 @@
     <color name="grey">#6A6767</color>
     <color name="green">#25F800</color>
     <color name="red">#FB0505</color>
+
+    <color name="color1">#3A2E39</color>
+    <color name="color2">#1e555c</color>
+    <color name="color2_light">#318995</color>
+    <color name="color3">#f4d8cd</color>
+    <color name="color4">#edb183</color>
+    <color name="color5">#f15152</color>
 </resources>

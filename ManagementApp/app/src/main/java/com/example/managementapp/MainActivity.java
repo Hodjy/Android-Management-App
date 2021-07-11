@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout calendarLayoutRef = findViewById(R.id.calendarLayout);
         LinearLayout callLayoutRef = findViewById(R.id.callLayout);
         LinearLayout gpsLayoutRef = findViewById(R.id.gpsLayout);
+        LinearLayout alarmClockLayoutRef = findViewById(R.id.alarmClockLayout);
 
 
 
@@ -76,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
                     String message = getResources().getString(R.string.main_activity_turnOnGps);
                     Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        alarmClockLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AlarmClockActivity.class);
+                startActivity(intent);
             }
         });
 
