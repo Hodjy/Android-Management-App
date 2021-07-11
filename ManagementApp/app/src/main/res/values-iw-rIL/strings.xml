@@ -47,5 +47,4 @@
     <string name="settings_activity_changeLanguage">שנה את שפת הפלאפון שלך</string>
     <string name="settings_activity_manageApplication">נהל את האפליקציות שלך</string>
     <string name="settings_phoneSettings">פתח את הגדרות המכשיר</string>
-    <string name="alarm_clock_no_save_permissions">אין רשות להשתמש בשמירת השעון.</string>
 </resources>

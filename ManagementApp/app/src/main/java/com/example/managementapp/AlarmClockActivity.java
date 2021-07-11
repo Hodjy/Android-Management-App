@@ -18,10 +18,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class AlarmClockActivity extends AppCompatActivity {
-
-    final int SAVE_ALARM_CLOCK_REQUEST = 1;
-    private String m_noAlarmSavePermissionMsg;
-
     //declared as global for ease of class use:
     private TimePicker m_TimePicker;
     private ToggleButton m_Day1Tb;
@@ -39,7 +35,6 @@ public class AlarmClockActivity extends AppCompatActivity {
 
         Button saveBtn = findViewById(R.id.alarm_clock_save_btn);
 
-        m_noAlarmSavePermissionMsg = getResources().getString(R.string.alarm_clock_no_save_permissions);
         m_TimePicker = findViewById(R.id.alarm_clock_time_picker);
         m_Day1Tb = findViewById(R.id.alarm_clock_day1_btn);
         m_Day2Tb = findViewById(R.id.alarm_clock_day2_btn);
