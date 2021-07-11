@@ -30,13 +30,14 @@
         android:gravity="center"
         android:weightSum="8">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:background="@drawable/circular_btn_style"
-            android:text="@string/alarmClock_day1"
+            android:textOff="@string/alarmClock_day1"
+            android:textOn="@string/alarmClock_day1"
             android:id="@+id/alarm_clock_day1_btn"/>
 
 
