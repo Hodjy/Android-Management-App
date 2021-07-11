@@ -1,6 +1,8 @@
 package com.example.managementapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout gpsLayoutRef = findViewById(R.id.gpsLayout);
         LinearLayout alarmClockLayoutRef = findViewById(R.id.alarmClockLayout);
         LinearLayout settingsLayoutRef = findViewById(R.id.settingsLayout);
+
+        RecyclerView eventsRecyclerView = findViewById(R.id.main_activity_eventsRecyclerView);
+        eventsRecyclerView.setHasFixedSize(true);
+
+        eventsRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
 
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override

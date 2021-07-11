@@ -40,6 +40,4 @@
         android:id="@+id/settings_settingsTextView"
         android:layout_marginTop="20dp"/>
 
-
-
 </LinearLayout>
