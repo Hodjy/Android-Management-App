@@ -47,9 +47,13 @@
     <string name="timeFormatting">HH:mm</string>
 
     # Settings activity strings :
+    <string name="settings_activity_accessibility_settings">Manage your accessibility settings</string>
+    <string name="settings_activity_changeLanguage">Change your phone language</string>
+    <string name="settings_activity_manageApplication">Manage your applications</string>
+    <string name="settings_phoneSettings">Open phone settings</string>
 
 
-    #Activitys Titles Strings :
+    #Activitys Titles Strings
     <string name="addContacts_activityTitle">New Contact</string>
     <string name="alarmClock_activityTitle">Alarm Clock</string>
     <string name="message_activityTitle">Message</string>
