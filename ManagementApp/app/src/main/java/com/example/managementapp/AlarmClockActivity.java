@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.view.View;
@@ -16,11 +15,12 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class AlarmClockActivity extends AppCompatActivity {
 
     final int SAVE_ALARM_CLOCK_REQUEST = 1;
-    private String m_noAlarmSavePermission;
+    private String m_noAlarmSavePermissionMsg;
 
     //declared as global for ease of class use:
     private TimePicker m_TimePicker;
@@ -39,7 +39,7 @@ public class AlarmClockActivity extends AppCompatActivity {
 
         Button saveBtn = findViewById(R.id.alarm_clock_save_btn);
 
-        m_noAlarmSavePermission = getResources().getString(R.string.alarm_clock_no_save_permissions);
+        m_noAlarmSavePermissionMsg = getResources().getString(R.string.alarm_clock_no_save_permissions);
         m_TimePicker = findViewById(R.id.alarm_clock_time_picker);
         m_Day1Tb = findViewById(R.id.alarm_clock_day1_btn);
         m_Day2Tb = findViewById(R.id.alarm_clock_day2_btn);
@@ -52,25 +52,8 @@ public class AlarmClockActivity extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int hasPermissions;
-                hasPermissions = checkSelfPermission(Manifest.permission.SET_ALARM);
 
-                if (Build.VERSION.SDK_INT >= 23)
-                {
-
-                    if(hasPermissions == PackageManager.PERMISSION_GRANTED)
-                    {
-                        saveAlarmClock(m_TimePicker, m_Day1Tb, m_Day2Tb, m_Day3Tb, m_Day4Tb, m_Day5Tb, m_Day6Tb, m_Day7Tb);
-                    }
-                    else
-                    {
-                        requestPermissions(new String[]{Manifest.permission.SET_ALARM}, SAVE_ALARM_CLOCK_REQUEST);
-                    }
-                }
-                else
-                {
-
-                }
+                saveAlarmClock(m_TimePicker, m_Day1Tb, m_Day2Tb, m_Day3Tb, m_Day4Tb, m_Day5Tb, m_Day6Tb, m_Day7Tb);
             }
         });
     }
@@ -98,31 +81,14 @@ public class AlarmClockActivity extends AppCompatActivity {
     {
         ArrayList<Integer> days = new ArrayList<Integer>();
 
-        days.add(day1.isChecked() ? 1 : 0);
-        days.add(day2.isChecked() ? 1 : 0);
-        days.add(day3.isChecked() ? 1 : 0);
-        days.add(day4.isChecked() ? 1 : 0);
-        days.add(day5.isChecked() ? 1 : 0);
-        days.add(day6.isChecked() ? 1 : 0);
-        days.add(day7.isChecked() ? 1 : 0);
+        days.add(day1.isChecked() ? Calendar.SUNDAY : 0);
+        days.add(day2.isChecked() ? Calendar.MONDAY : 0);
+        days.add(day3.isChecked() ? Calendar.TUESDAY : 0);
+        days.add(day4.isChecked() ? Calendar.WEDNESDAY : 0);
+        days.add(day5.isChecked() ? Calendar.THURSDAY : 0);
+        days.add(day6.isChecked() ? Calendar.FRIDAY : 0);
+        days.add(day7.isChecked() ? Calendar.SATURDAY : 0);
 
         return days;
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if (requestCode == SAVE_ALARM_CLOCK_REQUEST)
-        {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            {
-                saveAlarmClock(m_TimePicker, m_Day1Tb, m_Day2Tb, m_Day3Tb, m_Day4Tb, m_Day5Tb, m_Day6Tb, m_Day7Tb);
-            }
-            else
-            {
-                Toast.makeText(this, m_noAlarmSavePermission, Toast.LENGTH_LONG).show();
-            }
-        }
     }
 }

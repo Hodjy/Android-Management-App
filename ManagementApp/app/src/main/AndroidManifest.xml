@@ -3,7 +3,7 @@
     package="com.example.managementapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Brilliant">
+
         <activity android:name=".SettingsActivity"
             android:label="@string/settings_activityTitle"
             android:parentActivityName=".MainActivity">
