@@ -21,6 +21,7 @@
         android:gravity="top|center"
         android:textSize="30sp"
         android:layout_weight="10"
+        android:id="@+id/alarm_clock_time_picker"
         />
 
     <LinearLayout
@@ -41,57 +42,63 @@
             android:id="@+id/alarm_clock_day1_btn"/>
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="@string/alarmClock_day2"
+            android:textOff="@string/alarmClock_day2"
+            android:textOn="@string/alarmClock_day2"
             android:id="@+id/alarm_clock_day2_btn"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="@string/alarmClock_day3"
+            android:textOff="@string/alarmClock_day3"
+            android:textOn="@string/alarmClock_day3"
             android:id="@+id/alarm_clock_day3_btn"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="@string/alarmClock_day4"
+            android:textOff="@string/alarmClock_day4"
+            android:textOn="@string/alarmClock_day4"
             android:id="@+id/alarm_clock_day4_btn"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="@string/alarmClock_day5"
+            android:textOff="@string/alarmClock_day5"
+            android:textOn="@string/alarmClock_day5"
             android:id="@+id/alarm_clock_day5_btn"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            android:text="@string/alarmClock_day6"
+            android:textOff="@string/alarmClock_day6"
+            android:textOn="@string/alarmClock_day6"
             android:id="@+id/alarm_clock_day6_btn"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ToggleButton
             android:layout_width="0dp"
             android:layout_weight="1"
             android:background="@drawable/circular_btn_style"
             android:layout_height="wrap_content"
-            android:text="@string/alarmClock_day7"
+            android:textOff="@string/alarmClock_day7"
+            android:textOn="@string/alarmClock_day7"
             android:id="@+id/alarm_clock_day7_btn"/>
 
     </LinearLayout>
@@ -104,7 +111,8 @@
         android:textSize="20sp"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:layout_weight="1.5"/>
+        android:layout_weight="1.5"
+        android:id="@+id/alarm_clock_save_btn"/>
 
 </LinearLayout>
 
