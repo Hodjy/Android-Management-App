@@ -20,14 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         LinearLayout sendMessageLayoutRef = findViewById(R.id.sendMessageLayout);
-        LinearLayout statisticLayoutRef = findViewById(R.id.phoneStatisticsLayout);
         LinearLayout calendarLayoutRef = findViewById(R.id.calendarLayout);
         LinearLayout callLayoutRef = findViewById(R.id.callLayout);
         LinearLayout gpsLayoutRef = findViewById(R.id.gpsLayout);
         LinearLayout alarmClockLayoutRef = findViewById(R.id.alarmClockLayout);
-
-
-
+        LinearLayout settingsLayoutRef = findViewById(R.id.settingsLayout);
 
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,15 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        statisticLayoutRef.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , StatisticActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
         calendarLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AlarmClockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        settingsLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
             }
         });

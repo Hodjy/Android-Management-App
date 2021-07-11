@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.managementapp">
 
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,34 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Brilliant">
-        <activity android:name=".CallActivity"
-            android:label="@string/call_activityTitle"
+        <activity android:name=".SettingsActivity"
+            android:label="@string/settings_activityTitle"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity
-            android:name=".StatisticActivity"
-            android:label="@string/statistic_activityTitle"
+            android:name=".CallActivity"
+            android:label="@string/call_activityTitle"
             android:parentActivityName=".MainActivity">
+
         </activity>
         <activity
             android:name=".CalendarActivity"
             android:label="@string/calender_activityTitle"
             android:parentActivityName=".MainActivity">
+
         </activity>
         <activity
             android:name=".AlarmClockActivity"
             android:label="@string/alarmClock_activityTitle"
             android:parentActivityName=".MainActivity">
+
         </activity>
         <activity
             android:name=".AddContactsActivity"
             android:label="@string/addContacts_activityTitle"
             android:parentActivityName=".MainActivity">
+
         </activity>
         <activity
             android:name=".MessageActivity"
             android:label="@string/message_activityTitle"
             android:parentActivityName=".MainActivity">
+
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -9,7 +9,6 @@
     <string name="send_message">שלח</string>
     <string name="alarm_clock_text">קבע שעון</string>
     <string name="next_events_msg">האירועים הבאים שלך:</string>
-    <string name="statics_activity_title">הסטטיסטיקות שלך:</string>
     <string name="alarm_clock_activity_title">בחר זמן:</string>
     <string name="alarm_clock_activity_button_save">שמור שעון חדש</string>
     <string name="add_contact_activity_title">הוסף קשר חדש:</string>
@@ -22,14 +21,12 @@
     <string name="calender_activityTitle">לוח אירועים</string>
     <string name="addContacts_activityTitle">איש קשר חדש</string>
     <string name="alarmClock_activityTitle">שעון מעורר</string>
-    <string name="statistic_activityTitle">סטטיסטיקות</string>
     <string name="message_activityTitle">הודעה</string>
     <string name="calendar_activity_instructions">קבע אירוע חדש:</string>
     <string name="message_activity_howToSpeak">בבקשה לדבר לאט וברור</string>
     <string name="message_activity_emptyMsg">ההודעה ריקה, בבקשה לכתוב הודעה</string>
     <string name="call_text">התקשר</string>
     <string name="settings_text">הגדרות</string>
-    <string name="phone_data_text">נתוני הפלאפון</string>
     <string name="calendar_activity_enterEventTitle">הכנס את כותרת האירוע:</string>
     <string name="call_activityTitle">טלפון</string>
     <string name="main_activity_turnOnGps">בבקשה לפעיל את המיקום</string>
@@ -45,4 +42,5 @@
     <string name="alarmClock_day5">ה</string>
     <string name="alarmClock_day6">ו</string>
     <string name="alarmClock_day7">ש</string>
+    <string name="settings_activityTitle">הגדרות</string>
 </resources>
