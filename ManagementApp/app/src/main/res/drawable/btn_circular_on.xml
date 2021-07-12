@@ -6,6 +6,6 @@
         android:height="24dp"
         android:width="24dp"/>
 
-    <solid android:color= "@color/design_default_color_secondary"/>
+    <solid android:color= "?attr/colorSecondaryVariant"/>
     <corners android:radius="20dp"/>
 </shape>

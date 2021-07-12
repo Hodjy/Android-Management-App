@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout gpsLayoutRef = findViewById(R.id.gpsLayout);
         LinearLayout alarmClockLayoutRef = findViewById(R.id.alarmClockLayout);
         LinearLayout settingsLayoutRef = findViewById(R.id.settingsLayout);
+        LinearLayout addContactsLayoutRef = findViewById(R.id.addContactLayout);
 
         RecyclerView eventsRecyclerView = findViewById(R.id.main_activity_eventsRecyclerView);
         eventsRecyclerView.setHasFixedSize(true);
@@ -87,6 +88,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        addContactsLayoutRef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddContactsActivity.class);
                 startActivity(intent);
             }
         });

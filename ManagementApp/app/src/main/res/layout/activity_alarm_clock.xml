@@ -39,6 +39,7 @@
             android:background="@drawable/circular_btn_style"
             android:textOff="@string/alarmClock_day1"
             android:textOn="@string/alarmClock_day1"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day1_btn"/>
 
 
@@ -50,6 +51,7 @@
             android:layout_marginEnd="5dp"
             android:textOff="@string/alarmClock_day2"
             android:textOn="@string/alarmClock_day2"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day2_btn"/>
 
         <ToggleButton
@@ -60,6 +62,7 @@
             android:layout_marginEnd="5dp"
             android:textOff="@string/alarmClock_day3"
             android:textOn="@string/alarmClock_day3"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day3_btn"/>
 
         <ToggleButton
@@ -70,6 +73,7 @@
             android:layout_marginEnd="5dp"
             android:textOff="@string/alarmClock_day4"
             android:textOn="@string/alarmClock_day4"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day4_btn"/>
 
         <ToggleButton
@@ -80,6 +84,7 @@
             android:layout_marginEnd="5dp"
             android:textOff="@string/alarmClock_day5"
             android:textOn="@string/alarmClock_day5"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day5_btn"/>
 
         <ToggleButton
@@ -90,6 +95,7 @@
             android:layout_marginEnd="5dp"
             android:textOff="@string/alarmClock_day6"
             android:textOn="@string/alarmClock_day6"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day6_btn"/>
 
         <ToggleButton
@@ -99,6 +105,7 @@
             android:layout_height="wrap_content"
             android:textOff="@string/alarmClock_day7"
             android:textOn="@string/alarmClock_day7"
+            android:textColor="?attr/colorOnSecondary"
             android:id="@+id/alarm_clock_day7_btn"/>
 
     </LinearLayout>

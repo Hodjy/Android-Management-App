@@ -14,9 +14,9 @@
     <color name="blue">#0738EA</color>
 
     <color name="color1">#3A2E39</color>
-    <color name="color2">#1e555c</color>
-    <color name="color2_light">#318995</color>
-    <color name="color3">#f4d8cd</color>
-    <color name="color4">#edb183</color>
-    <color name="color5">#f15152</color>
+    <color name="color2">#0C429E</color>
+    <color name="color2_light">#224CCA</color>
+    <color name="color3">#805CD1</color>
+    <color name="color4">#B2A3D5</color>
+    <color name="color5">#D0B6DF</color>
 </resources>
