@@ -19,20 +19,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:hint="@string/add_contact_activity_first_name"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:id="@+id/addContacts_nameET"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:hint="@string/add_contact_activity_last_name"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:id="@+id/addContacts_lastNameET"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:hint="@string/add_contact_activity_number"
-        android:inputType="number"
-        android:layout_weight="1"/>
+        android:inputType="phone"
+        android:layout_weight="1"
+        android:id="@+id/addContacts_phoneNumberET"/>
 
     <Button
         android:layout_width="match_parent"
@@ -41,6 +44,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="20dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:id="@+id/addContacts_saveBtn"/>
 
 </LinearLayout>
