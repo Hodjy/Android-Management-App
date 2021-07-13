@@ -6,44 +6,49 @@
     app:cardUseCompatPadding="true"
     app:contentPadding="10dp"
     android:elevation="8dp"
-    app:cardCornerRadius="5dp">
+    app:cardCornerRadius="10dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/card_view_eventTitle"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:id="@+id/card_view_eventTitleTv"/>
+            android:layout_weight="80"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/card_view_eventDescription"
-            android:textSize="15sp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/card_view_eventDescriptionTv"/>
+            <TextView
+                android:id="@+id/card_view_eventTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_view_eventTitle"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/card_view_eventDate"
-            android:layout_marginTop="5dp"
-            android:id="@+id/card_view_eventDateTv"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_view_eventDescription"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/card_view_eventDescriptionTv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_view_eventDate"
+                android:layout_marginTop="5dp"
+                android:id="@+id/card_view_eventDateTv"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:src="@drawable/ic_baseline_star_border_24"/>
 
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="end|center"
-        android:src="@drawable/ic_baseline_star_border_24"
-        android:background="@color/design_default_color_primary"/>
-
 
 </androidx.cardview.widget.CardView>
