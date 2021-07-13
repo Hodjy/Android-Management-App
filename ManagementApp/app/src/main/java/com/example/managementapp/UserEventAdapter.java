@@ -56,7 +56,7 @@ public class UserEventAdapter extends RecyclerView.Adapter<UserEventAdapter.User
         UserEvent userEvent = userEvents.get(position);
         holder.titleTv.setText(userEvent.getTitle());
         holder.descriptionTv.setText(userEvent.getDescription());
-        holder.dateTv.setText(userEvent.getDate().toString());
+        holder.dateTv.setText(userEvent.getDate());
 
 
     }

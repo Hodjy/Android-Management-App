@@ -22,10 +22,12 @@ import android.widget.LinearLayout;
 import android.widget.TextClock;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -162,10 +164,15 @@ public class MainActivity extends AppCompatActivity {
 
         if(cursor.moveToFirst())
         {
+            String dateFormat = getResources().getString(R.string.dateFormatting);
+            String timeFormat = getResources().getString(R.string.timeFormatting);
+            SimpleDateFormat sdf = new SimpleDateFormat(dateFormat + "    " + timeFormat, Locale.getDefault());
+            Date date;
             do{
                 String title = cursor.getString(0);
                 String description =cursor.getString(1);
-                Date dstart = new Date(cursor.getLong(2));
+                date = new Date(cursor.getLong(2));
+                String dstart = sdf.format(date);
 
                 userEvents.add(new UserEvent(title, description, dstart));
 
