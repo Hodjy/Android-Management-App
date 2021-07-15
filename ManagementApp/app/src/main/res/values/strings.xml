@@ -1,5 +1,4 @@
 <resources>
-    # Main activity strings:
     <string name="app_name">ManagementApp</string>
     <string name="gps_text">Where I am</string>
     <string name="calendar_text">Calendar</string>
@@ -10,14 +9,10 @@
     <string name="call_text">Call</string>
     <string name="settings_text">Settings</string>
     <string name="main_activity_turnOnGps">Please turn on your GPS</string>
-
-    # Message activity strings:
     <string name="message_to_send_hint">Enter your message here</string>
     <string name="send_message">Send</string>
     <string name="message_activity_howToSpeak">Please speak slowly and clearly</string>
     <string name="message_activity_emptyMsg">Your message is empty please enter a message</string>
-
-    # AlarmClock activity strings:
     <string name="alarm_clock_activity_title">Choose the time:</string>
     <string name="alarm_clock_activity_button_save">Save new alarm</string>
     <string name="alarmClock_day1">Su</string>
@@ -27,15 +22,11 @@
     <string name="alarmClock_day5">Th</string>
     <string name="alarmClock_day6">F</string>
     <string name="alarmClock_day7">Sa</string>
-
-    # AddContact activity strings:
     <string name="add_contact_activity_title">Add a new contact:</string>
     <string name="add_contact_activity_first_name">First Name:</string>
     <string name="add_contact_activity_last_name">Last Name:</string>
     <string name="add_contact_activity_number">Phone Number:</string>
     <string name="add_contact_activity_button_save">Save</string>
-
-    # Calendar activity strings:
     <string name="calendar_activity_instructions">Schedule a new Event:</string>
     <string name="calendar_activity_enterEventDetails">Enter the event details:</string>
     <string name="calendar_activity_saveEvent">Save</string>
@@ -45,15 +36,10 @@
     <string name="calendar_activity_enterEventDate">Enter event date:</string>
     <string name="dateFormatting">MM/dd/yyyy</string>
     <string name="timeFormatting">HH:mm</string>
-
-    # Settings activity strings :
     <string name="settings_activity_accessibility_settings">Manage your accessibility settings</string>
     <string name="settings_activity_changeLanguage">Change your phone language</string>
     <string name="settings_activity_manageApplication">Manage your applications</string>
     <string name="settings_phoneSettings">Open phone settings</string>
-
-
-    #Activitys Titles Strings
     <string name="addContacts_activityTitle">New Contact</string>
     <string name="alarmClock_activityTitle">Alarm Clock</string>
     <string name="message_activityTitle">Message</string>
@@ -63,6 +49,6 @@
     <string name="card_view_eventTitle">Event  title</string>
     <string name="card_view_eventDescription">Event description</string>
     <string name="card_view_eventDate" translatable="false">1/1/1970     00:00</string>
-
+    <string name="settings_activity_manageThisApp">Manage this app settings</string>
 
 </resources>

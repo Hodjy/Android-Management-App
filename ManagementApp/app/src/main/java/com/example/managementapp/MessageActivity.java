@@ -15,25 +15,24 @@ import java.util.ArrayList;
 
 public class MessageActivity extends AppCompatActivity {
 
-    private EditText messageEditText;
-    public Button sendTextButton;
+    private EditText m_MessageEditText;
+    public Button m_SendTextButton;
 
     final int SPEECH_RECOGNITION_REQUEST = 1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
-        messageEditText = findViewById(R.id.message_to_send);
-        sendTextButton = (Button) findViewById(R.id.send_text_btn);
+        m_MessageEditText = findViewById(R.id.message_to_send);
+        m_SendTextButton = (Button) findViewById(R.id.send_text_btn);
         ImageView speechBtn = findViewById(R.id.speech_btn);
 
-        sendTextButton.setOnClickListener(new View.OnClickListener() {
+        m_SendTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String message = messageEditText.getText().toString();
+                String message = m_MessageEditText.getText().toString();
 
                 if(!message.isEmpty())
                 {
@@ -71,7 +70,7 @@ public class MessageActivity extends AppCompatActivity {
             if(requestCode == SPEECH_RECOGNITION_REQUEST && resultCode == RESULT_OK){
 
                 ArrayList<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                messageEditText.setText(results.get(0));
+                m_MessageEditText.setText(results.get(0));
             }
         }
 }

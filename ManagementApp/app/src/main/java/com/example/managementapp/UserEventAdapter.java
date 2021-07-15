@@ -25,17 +25,14 @@ public class UserEventAdapter extends RecyclerView.Adapter<UserEventAdapter.User
         TextView descriptionTv;
         TextView dateTv;
 
-
         public UserEventViewHolder(@NonNull View itemView) {
             super(itemView);
 
             titleTv = itemView.findViewById(R.id.card_view_eventTitleTv);
             descriptionTv = itemView.findViewById(R.id.card_view_eventDescriptionTv);
             dateTv = itemView.findViewById(R.id.card_view_eventDateTv);
-
         }
     }
-
 
     @NonNull
     @Override
@@ -57,7 +54,5 @@ public class UserEventAdapter extends RecyclerView.Adapter<UserEventAdapter.User
         holder.titleTv.setText(userEvent.getTitle());
         holder.descriptionTv.setText(userEvent.getDescription());
         holder.dateTv.setText(userEvent.getDate());
-
-
     }
 }

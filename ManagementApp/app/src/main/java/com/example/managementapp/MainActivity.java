@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.ContentResolver;
-import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,20 +18,21 @@ import android.provider.CalendarContract;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextClock;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    
+    List<UserEvent> m_UserEventList;
+    UserEventAdapter m_UserEventAdapter;
+    RecyclerView m_EventsRecyclerView;
 
     final int READ_PERMISSION_REQUEST = 1;
-    List<UserEvent> userEventList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,34 +47,19 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout settingsLayoutRef = findViewById(R.id.settingsLayout);
         LinearLayout addContactsLayoutRef = findViewById(R.id.addContactLayout);
 
-
-
-        //RecyclerView//
-
-        userEventList = new ArrayList<>();
-
-        RecyclerView eventsRecyclerView = findViewById(R.id.main_activity_eventsRecyclerView);
-        eventsRecyclerView.setHasFixedSize(true);
-
-        eventsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //eventsRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-
-
-        //TODO get the userEvents data and put it on this list
+        m_UserEventList = new ArrayList<>();
+        m_EventsRecyclerView = findViewById(R.id.main_activity_eventsRecyclerView);
+        m_EventsRecyclerView.setHasFixedSize(true);
+        m_EventsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         int hasCallPermission = checkSelfPermission(Manifest.permission.READ_CALENDAR);
 
         if(hasCallPermission == PackageManager.PERMISSION_GRANTED){
-            userEventList = extractUserEventsFromCalendar(this);
+            initializeEventsRecyclerView();
         }
         else{
             requestPermissions(new String []{Manifest.permission.READ_CALENDAR}, READ_PERMISSION_REQUEST);
         }
-
-
-        UserEventAdapter userEventAdapter = new UserEventAdapter(userEventList);
-        eventsRecyclerView.setAdapter(userEventAdapter);
-        //RecyclerView//
 
         sendMessageLayoutRef.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public List<UserEvent> extractUserEventsFromCalendar(Context context) {
+    private List<UserEvent> extractUserEventsFromCalendar(Context context) {
 
         ContentResolver contentResolver = context.getContentResolver();
         List<UserEvent> userEvents= new ArrayList<>();
@@ -156,12 +141,14 @@ public class MainActivity extends AppCompatActivity {
         String selection = "((" + CalendarContract.Events.DTSTART + ">" + nowTime +") AND ("
                 +CalendarContract.Events.DTEND + "<" + threeYearsFromNow + "))";
 
+        //extract all the events to cursor
         Cursor cursor = contentResolver.query(CalendarContract.Events.CONTENT_URI,new String[]{
                 CalendarContract.Events.TITLE,
                 CalendarContract.Events.DESCRIPTION,
                 CalendarContract.Events.DTSTART,
                 CalendarContract.Events.DTEND},selection, null, CalendarContract.Events.DTSTART + " ASC");
 
+        //extract the events to user event list
         if(cursor.moveToFirst())
         {
             String dateFormat = getResources().getString(R.string.dateFormatting);
@@ -179,10 +166,16 @@ public class MainActivity extends AppCompatActivity {
             }while (cursor.moveToNext());
         }
 
-
         return userEvents;
     }
 
+    private void initializeEventsRecyclerView(){
+
+        m_UserEventList = extractUserEventsFromCalendar(MainActivity.this);
+        m_UserEventAdapter = new UserEventAdapter(m_UserEventList);
+        m_EventsRecyclerView.setAdapter(m_UserEventAdapter);
+        m_UserEventAdapter.notifyDataSetChanged();
+    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @Nullable String[] permissions, @Nullable int[] grantResults) {
@@ -191,14 +184,11 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == READ_PERMISSION_REQUEST)
         {
             if(grantResults[0]== PackageManager.PERMISSION_GRANTED){
-                userEventList = extractUserEventsFromCalendar(MainActivity.this);
+                initializeEventsRecyclerView();
             }
             else{
                 requestPermissions(new String []{Manifest.permission.READ_CALENDAR}, READ_PERMISSION_REQUEST);
             }
         }
     }
-
-
-
 }

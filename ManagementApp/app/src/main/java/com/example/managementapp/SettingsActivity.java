@@ -3,12 +3,11 @@ package com.example.managementapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -17,21 +16,22 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        TextView languageTv = findViewById(R.id.settings_languageTextView);
+        TextView myAppSettingsTv = findViewById(R.id.settings_myAppTextView);
+        TextView languageSettingsTv = findViewById(R.id.settings_languageTextView);
         TextView accessibilitySettingsTv = findViewById(R.id.settings_accessibilityTextView);
-        TextView applicationTv = findViewById(R.id.settings_applicationTextView);
+        TextView allApplicationsTv = findViewById(R.id.settings_applicationsTextView);
         TextView settingsTv = findViewById(R.id.settings_settingsTextView);
 
-
-        applicationTv.setOnClickListener(new View.OnClickListener() {
+        myAppSettingsTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS);
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                intent.setData(Uri.parse("package:" + getPackageName()));
                 startActivity(intent);
             }
         });
 
-        languageTv.setOnClickListener(new View.OnClickListener() {
+        languageSettingsTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
@@ -39,11 +39,18 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-
         accessibilitySettingsTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                startActivity(intent);
+            }
+        });
+
+        allApplicationsTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS);
                 startActivity(intent);
             }
         });

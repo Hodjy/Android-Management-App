@@ -12,6 +12,18 @@
         android:gravity="center"
         android:background="@drawable/border_style"
         android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_activity_manageThisApp"
+        android:textSize="20sp"
+        android:id="@+id/settings_myAppTextView"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
         android:text="@string/settings_activity_changeLanguage"
         android:textSize="20sp"
         android:id="@+id/settings_languageTextView"
@@ -38,7 +50,7 @@
         android:textColor="?attr/colorOnSecondary"
         android:text="@string/settings_activity_manageApplication"
         android:textSize="20sp"
-        android:id="@+id/settings_applicationTextView"
+        android:id="@+id/settings_applicationsTextView"
         android:layout_marginTop="5dp"/>
 
     <TextView

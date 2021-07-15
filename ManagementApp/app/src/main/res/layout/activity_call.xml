@@ -16,7 +16,6 @@
         android:gravity="center"
         android:id="@+id/call_activity_phone_textView"/>
 
-
     <Space android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"/>
@@ -65,7 +64,6 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:id="@+id/call_activity_btn_3"/>
-
 
     </LinearLayout>
 
@@ -118,7 +116,6 @@
             android:textSize="20sp"
             android:id="@+id/call_activity_btn_6"/>
 
-
     </LinearLayout>
 
     <Space android:layout_width="match_parent"
@@ -169,7 +166,6 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:id="@+id/call_activity_btn_9"/>
-
 
     </LinearLayout>
 
@@ -237,7 +233,6 @@
             android:textSize="20sp"
             android:id="@+id/call_activity_btn_plus"/>
 
-
     </LinearLayout>
 
     <Space
@@ -285,6 +280,6 @@
             android:background="@drawable/reg_btn_style"
             android:src="@drawable/ic_baseline_backspace_24"
             android:id="@+id/call_activity_delete_btn"/>
-    </LinearLayout>
 
+    </LinearLayout>
 </LinearLayout>

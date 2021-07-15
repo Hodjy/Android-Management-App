@@ -7,7 +7,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
@@ -18,8 +17,8 @@ import android.widget.Toast;
 
 public class CallActivity extends AppCompatActivity implements View.OnClickListener{
 
-    TextView numberTv;
-    ImageButton settings_btn;
+    private TextView m_NumberTv;
+    private ImageButton m_Settings_btn;
 
     final int CALL_PERMISSION_REQUEST = 1;
 
@@ -31,9 +30,8 @@ public class CallActivity extends AppCompatActivity implements View.OnClickListe
         // set this window to be LTR only
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
-
-        numberTv = findViewById(R.id.call_activity_phone_textView);
-        settings_btn = findViewById(R.id.call_activity_settings_btn);
+        m_NumberTv = findViewById(R.id.call_activity_phone_textView);
+        m_Settings_btn = findViewById(R.id.call_activity_settings_btn);
 
         Button btn1 = findViewById(R.id.call_activity_btn_1);
         Button btn2 = findViewById(R.id.call_activity_btn_2);
@@ -73,10 +71,10 @@ public class CallActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
 
-                String current = numberTv.getText().toString();
+                String current = m_NumberTv.getText().toString();
                 if(current.length()>0) {
                     current = current.substring(0, current.length() - 1);
-                    numberTv.setText(current);
+                    m_NumberTv.setText(current);
                 }
             }
         });
@@ -96,7 +94,7 @@ public class CallActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        settings_btn.setOnClickListener(new View.OnClickListener() {
+        m_Settings_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
@@ -117,13 +115,14 @@ public class CallActivity extends AppCompatActivity implements View.OnClickListe
             }
             else{
                 Toast.makeText(this, "Must give permission to call, please go to settings", Toast.LENGTH_SHORT).show();
-                settings_btn.setVisibility(View.VISIBLE);
+                m_Settings_btn.setVisibility(View.VISIBLE);
             }
         }
     }
 
     private void callPhone(){
-        String phoneNumber = numberTv.getText().toString();
+
+        String phoneNumber = m_NumberTv.getText().toString();
 
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:" + phoneNumber));
@@ -132,6 +131,7 @@ public class CallActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        numberTv.setText (numberTv.getText().toString() + ((Button)v).getText().toString());
+
+        m_NumberTv.setText (m_NumberTv.getText().toString() + ((Button)v).getText().toString());
     }
 }

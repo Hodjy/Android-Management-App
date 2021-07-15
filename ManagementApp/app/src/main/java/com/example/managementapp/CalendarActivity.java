@@ -20,24 +20,23 @@ import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.SimpleTimeZone;
 
 public class CalendarActivity extends AppCompatActivity {
 
-    private String m_dateFormat;
-    private String m_timeFormat;
-    private SimpleDateFormat m_sdf;
-    private final Calendar m_instancedCalendar = Calendar.getInstance();
-    private String m_date;
+    private String m_DateFormat;
+    private String m_TimeFormat;
+    private SimpleDateFormat m_Sdf;
+    private final Calendar m_InstancedCalendar = Calendar.getInstance();
+    private String m_Date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-
-        m_dateFormat = getResources().getString(R.string.dateFormatting);
-        m_timeFormat = getResources().getString(R.string.timeFormatting);
-        m_sdf = new SimpleDateFormat(m_dateFormat, Locale.getDefault());
+        m_DateFormat = getResources().getString(R.string.dateFormatting);
+        m_TimeFormat = getResources().getString(R.string.timeFormatting);
+        m_Sdf = new SimpleDateFormat(m_DateFormat, Locale.getDefault());
 
         CalendarView calendarCV = findViewById(R.id.calendar_inputCalendar);
         TimePicker timePicker = findViewById(R.id.calendar_timepickerStartTime);
@@ -45,14 +44,13 @@ public class CalendarActivity extends AppCompatActivity {
         EditText eventContentsET = findViewById(R.id.calendar_eventContentsET);
         Button saveBtn = findViewById(R.id.calendar_saveBtn);
 
-
-        m_date =  m_sdf.format(new Date(calendarCV.getDate()));
+        m_Date =  m_Sdf.format(new Date(calendarCV.getDate()));
 
         calendarCV.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                m_instancedCalendar.set(year,month,dayOfMonth);
-                m_date = m_sdf.format(m_instancedCalendar.getTime());
+                m_InstancedCalendar.set(year,month,dayOfMonth);
+                m_Date = m_Sdf.format(m_InstancedCalendar.getTime());
             }
         });
 
@@ -87,8 +85,8 @@ public class CalendarActivity extends AppCompatActivity {
 
     private long getUserSelectedTimeInMillis(TimePicker timePicker, CalendarView calendar) {
         String time = String.format(Locale.getDefault(),"%02d:%02d", timePicker.getHour() , timePicker.getMinute());
-        String dateToConvert = m_date + " " + time;
-        LocalDateTime ldt = LocalDateTime.parse(dateToConvert, DateTimeFormatter.ofPattern(m_dateFormat + " " + m_timeFormat));
+        String dateToConvert = m_Date + " " + time;
+        LocalDateTime ldt = LocalDateTime.parse(dateToConvert, DateTimeFormatter.ofPattern(m_DateFormat + " " + m_TimeFormat));
         long millis = ldt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 
         return millis;

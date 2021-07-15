@@ -1,17 +1,13 @@
 package com.example.managementapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
@@ -74,7 +70,7 @@ public class AlarmClockActivity extends AppCompatActivity {
                                                ToggleButton day5, ToggleButton day6,
                                                ToggleButton day7)
     {
-        ArrayList<Integer> days = new ArrayList<Integer>();
+        ArrayList<Integer> days = new ArrayList<>();
 
         days.add(day1.isChecked() ? Calendar.SUNDAY : 0);
         days.add(day2.isChecked() ? Calendar.MONDAY : 0);

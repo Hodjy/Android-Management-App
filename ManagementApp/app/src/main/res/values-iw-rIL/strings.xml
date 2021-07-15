@@ -49,4 +49,5 @@
     <string name="settings_phoneSettings">פתח את הגדרות המכשיר</string>
     <string name="card_view_eventTitle">כותרת האירוע</string>
     <string name="card_view_eventDescription">תוכן האירוע</string>
+    <string name="settings_activity_manageThisApp">נהל את הגדרות האפליצקיה הנוכחית</string>
 </resources>
