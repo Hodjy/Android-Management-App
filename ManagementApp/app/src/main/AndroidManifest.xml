@@ -14,35 +14,37 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Brilliant">
-        <activity android:name=".displayEventActivity"
+        <activity android:name=".displayAlarmActivity"
+            android:label="@string/displayAlarm_activityTitle"
+            android:parentActivityName=".AlarmClockActivity"></activity>
+        <activity
+            android:name=".displayEventActivity"
             android:label="@string/displayEvent_activityTitle"
-            android:parentActivityName=".CalendarActivity">
-
-        </activity>
+            android:parentActivityName=".CalendarActivity"></activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/settings_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CallActivity"
             android:label="@string/call_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CalendarActivity"
             android:label="@string/calender_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AlarmClockActivity"
             android:label="@string/alarmClock_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AddContactsActivity"
             android:label="@string/addContacts_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MessageActivity"
             android:label="@string/message_activityTitle"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

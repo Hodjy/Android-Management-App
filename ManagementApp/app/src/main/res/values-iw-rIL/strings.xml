@@ -54,4 +54,7 @@
     <string name="display_event_activity_date">תאריך:</string>
     <string name="display_event_activity_time">שעה:</string>
     <string name="calendar_activity_fill_forms">בבקשה למלא את כל השדות.</string>
+    <string name="displayAlarm_activityTitle">הצגת שעון מעורר</string>
+    <string name="display_alarm_activity_inDays">בימים:</string>
+    <string name="display_alarm_activity_didntchooseDays">לא בחרת ימים ולכן השעון  יצלצל בכל יום</string>
 </resources>

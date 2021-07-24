@@ -57,10 +57,10 @@ public class AlarmClockActivity extends AppCompatActivity {
         days = getDaysForAlarm(day1Tb, day2Tb, day3Tb, day4Tb,
                 day5Tb, day6Tb, day7Tb);
 
-        Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM);
-        intent.putExtra(AlarmClock.EXTRA_HOUR, hour);
-        intent.putExtra(AlarmClock.EXTRA_MINUTES, minutes);
-        intent.putExtra(AlarmClock.EXTRA_DAYS, days);
+        Intent intent = new Intent(AlarmClockActivity.this, displayAlarmActivity.class);
+        intent.putExtra("hour", hour);
+        intent.putExtra("minutes", minutes);
+        intent.putExtra("days", days);
 
         startActivity(intent);
     }
