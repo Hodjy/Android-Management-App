@@ -29,7 +29,7 @@
     <string name="add_contact_activity_button_save">Save</string>
     <string name="calendar_activity_instructions">Schedule a new Event:</string>
     <string name="calendar_activity_enterEventDetails">Enter the event details:</string>
-    <string name="calendar_activity_saveEvent">Save</string>
+    <string name="save_btn_text">Save</string>
     <string name="calendar_activity_enterEventTitle">Enter Event Title:</string>
     <string name="calendar_activity_enterEventStartingTime">Enter event start time:</string>
     <string name="calendar_activity_enterEventEndTime">Enter event end time:</string>
@@ -57,5 +57,8 @@
     <string name="displayAlarm_activityTitle">Display Alarm Clock</string>
     <string name="display_alarm_activity_inDays">In days:</string>
     <string name="display_alarm_activity_didntchooseDays">You didnt choose days so the alarm will ring every day</string>
+    <string name="display_contact_activityTile">Display Contact</string>
+    <string name="display_contact_activity_full_name">Full name:</string>
+    <string name="addContacts_activity_pleaseInsert">Please insert first name and phone number</string>
 
 </resources>

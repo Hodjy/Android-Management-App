@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="@string/calendar_activity_saveEvent"
+        android:text="@string/save_btn_text"
         android:textAllCaps="false"
         android:id="@+id/display_event_saveBtn"/>
 

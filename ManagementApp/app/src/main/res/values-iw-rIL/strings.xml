@@ -12,12 +12,12 @@
     <string name="alarm_clock_activity_title">בחר זמן:</string>
     <string name="alarm_clock_activity_button_save">שמור שעון חדש</string>
     <string name="add_contact_activity_title">הוסף קשר חדש:</string>
-    <string name="add_contact_activity_first_name">שם:</string>
+    <string name="add_contact_activity_first_name">שם פרטי:</string>
     <string name="add_contact_activity_last_name">שם משפחה:</string>
     <string name="add_contact_activity_number">מס טלפון:</string>
     <string name="add_contact_activity_button_save">שמור</string>
     <string name="calendar_activity_enterEventDetails">הכנס את פרטי האירוע:</string>
-    <string name="calendar_activity_saveEvent">שמור</string>
+    <string name="save_btn_text">שמור</string>
     <string name="calender_activityTitle">לוח אירועים</string>
     <string name="addContacts_activityTitle">איש קשר חדש</string>
     <string name="alarmClock_activityTitle">שעון מעורר</string>
@@ -57,4 +57,7 @@
     <string name="displayAlarm_activityTitle">הצגת שעון מעורר</string>
     <string name="display_alarm_activity_inDays">בימים:</string>
     <string name="display_alarm_activity_didntchooseDays">לא בחרת ימים ולכן השעון  יצלצל בכל יום</string>
+    <string name="display_contact_activityTile">הצגת איש קשר</string>
+    <string name="display_contact_activity_full_name">שם מלא:</string>
+    <string name="addContacts_activity_pleaseInsert">בבקשה להכניס שם פרטי ומספר טלפון</string>
 </resources>

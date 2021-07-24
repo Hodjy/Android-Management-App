@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/calendar_activity_saveEvent"
+        android:text="@string/save_btn_text"
         android:textAllCaps="false"
         android:id="@+id/calendar_saveBtn"/>
 

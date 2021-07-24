@@ -8,6 +8,7 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddContactsActivity extends AppCompatActivity {
 
@@ -24,14 +25,21 @@ public class AddContactsActivity extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
+                if(nameET.getText().toString().equals("") || phoneNumberET.getText().toString().equals(""))
+                {
+                    Toast.makeText(AddContactsActivity.this,
+                            getResources().getString(R.string.addContacts_activity_pleaseInsert),
+                            Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Intent intent = new Intent(AddContactsActivity.this, displayContactActivity.class);
 
-                intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
-                intent.putExtra(ContactsContract.Intents.Insert.NAME,
-                        nameET.getText() + " " + lastNameET.getText());
-                intent.putExtra(ContactsContract.Intents.Insert.PHONE, phoneNumberET.getText());
+                    intent.putExtra("name", nameET.getText().toString() + " " + lastNameET.getText().toString());
+                    intent.putExtra("phone_number", phoneNumberET.getText().toString());
 
-                startActivity(intent);
+                    startActivity(intent);
+                }
             }
         });
     }

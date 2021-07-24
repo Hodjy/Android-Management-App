@@ -14,7 +14,7 @@
             android:layout_width="0dp"
             android:layout_weight="3"
             android:layout_height="wrap_content"
-            android:text="@string/display_event_activity_time"
+            android:text="@string/display_contact_activity_full_name"
             android:textStyle="bold"
             android:textSize="20sp" />
 
@@ -25,7 +25,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:id="@+id/display_alarm_timeTv"/>
+            android:id="@+id/display_contact_activity_fullNameTv"/>
 
     </LinearLayout>
 
@@ -36,9 +36,9 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:layout_height="wrap_content"
-            android:text="@string/display_alarm_activity_inDays"
+            android:text="@string/add_contact_activity_number"
             android:textStyle="bold"
             android:textSize="20sp" />
 
@@ -49,7 +49,7 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:id="@+id/display_alarm_daysTv"/>
+            android:id="@+id/display_contact_activity_phoneNumberTv"/>
 
     </LinearLayout>
 
@@ -60,7 +60,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/save_btn_text"
         android:textAllCaps="false"
-        android:id="@+id/display_alarm_saveBtn"/>
+        android:id="@+id/display_contact_saveBtn"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

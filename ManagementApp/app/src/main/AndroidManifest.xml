@@ -14,13 +14,17 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Brilliant">
-        <activity android:name=".displayAlarmActivity"
+        <activity android:name=".displayContactActivity"
+            android:label="@string/display_contact_activityTile"
+            android:parentActivityName=".AddContactsActivity"></activity>
+        <activity
+            android:name=".displayAlarmActivity"
             android:label="@string/displayAlarm_activityTitle"
-            android:parentActivityName=".AlarmClockActivity"></activity>
+            android:parentActivityName=".AlarmClockActivity" />
         <activity
             android:name=".displayEventActivity"
             android:label="@string/displayEvent_activityTitle"
-            android:parentActivityName=".CalendarActivity"></activity>
+            android:parentActivityName=".CalendarActivity" />
         <activity
             android:name=".SettingsActivity"
             android:label="@string/settings_activityTitle"
