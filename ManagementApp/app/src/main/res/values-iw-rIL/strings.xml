@@ -47,7 +47,11 @@
     <string name="settings_activity_changeLanguage">שנה את שפת הפלאפון שלך</string>
     <string name="settings_activity_manageApplication">נהל את האפליקציות שלך</string>
     <string name="settings_phoneSettings">פתח את הגדרות המכשיר</string>
-    <string name="card_view_eventTitle">כותרת האירוע</string>
-    <string name="card_view_eventDescription">תוכן האירוע</string>
+    <string name="card_view_eventTitle">כותרת:</string>
+    <string name="card_view_eventDescription">תוכן:</string>
     <string name="settings_activity_manageThisApp">נהל את הגדרות האפליצקיה הנוכחית</string>
+    <string name="displayEvent_activityTitle">הצגת אירוע</string>
+    <string name="display_event_activity_date">תאריך:</string>
+    <string name="display_event_activity_time">שעה:</string>
+    <string name="calendar_activity_fill_forms">בבקשה למלא את כל השדות.</string>
 </resources>

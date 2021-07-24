@@ -28,6 +28,7 @@ public class CalendarActivity extends AppCompatActivity {
     private SimpleDateFormat m_Sdf;
     private final Calendar m_InstancedCalendar = Calendar.getInstance();
     private String m_Date;
+    private String m_Time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,27 +66,26 @@ public class CalendarActivity extends AppCompatActivity {
 
                 if(!eventTitleText.isEmpty() && !eventContentText.isEmpty())
                 {
-                    Intent intent = new Intent(Intent.ACTION_INSERT);
-                    intent.setData(CalendarContract.Events.CONTENT_URI);
-                    intent.putExtra(CalendarContract.Events.TITLE , eventTitleText);
-                    intent.putExtra(CalendarContract.Events.DESCRIPTION , eventContentText);
-                    intent.putExtra(CalendarContract.Events.EVENT_LOCATION, "");
-                    intent.putExtra(CalendarContract.Events.ALL_DAY, false);
-                    intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, millis);
+                    Intent intent = new Intent(CalendarActivity.this, displayEventActivity.class);
+                    intent.putExtra("title", eventTitleText);
+                    intent.putExtra("description", eventContentText);
+                    intent.putExtra("date", m_Date);
+                    intent.putExtra("time", m_Time);
+                    intent.putExtra("event_begin_time", millis);
 
                     startActivity(intent);
                 }
                 else
                 {
-                    Toast.makeText(CalendarActivity.this, "Please fill the required forms.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CalendarActivity.this, getResources().getString(R.string.calendar_activity_fill_forms), Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
     private long getUserSelectedTimeInMillis(TimePicker timePicker, CalendarView calendar) {
-        String time = String.format(Locale.getDefault(),"%02d:%02d", timePicker.getHour() , timePicker.getMinute());
-        String dateToConvert = m_Date + " " + time;
+        m_Time = String.format(Locale.getDefault(),"%02d:%02d", timePicker.getHour() , timePicker.getMinute());
+        String dateToConvert = m_Date + " " + m_Time;
         LocalDateTime ldt = LocalDateTime.parse(dateToConvert, DateTimeFormatter.ofPattern(m_DateFormat + " " + m_TimeFormat));
         long millis = ldt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
 

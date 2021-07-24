@@ -46,9 +46,13 @@
     <string name="calender_activityTitle">Calendar Event</string>
     <string name="call_activityTitle">Phone</string>
     <string name="settings_activityTitle">Settings</string>
-    <string name="card_view_eventTitle">Event  title</string>
-    <string name="card_view_eventDescription">Event description</string>
+    <string name="card_view_eventTitle">Title:</string>
+    <string name="card_view_eventDescription">Description:</string>
     <string name="card_view_eventDate" translatable="false">1/1/1970     00:00</string>
     <string name="settings_activity_manageThisApp">Manage this app settings</string>
+    <string name="displayEvent_activityTitle">Display Event</string>
+    <string name="display_event_activity_date">Date:</string>
+    <string name="display_event_activity_time">Time:</string>
+    <string name="calendar_activity_fill_forms">Please fill the required forms.</string>
 
 </resources>
