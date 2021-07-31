@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:gravity="top|center"
+        android:layout_margin="10dp"
+        android:text="@string/add_contact_activity_title"
+        android:layout_weight="2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/add_contact_activity_first_name"
+        android:layout_weight="1"
+        android:id="@+id/addContacts_nameET"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/add_contact_activity_last_name"
+        android:layout_weight="1"
+        android:id="@+id/addContacts_lastNameET"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/add_contact_activity_number"
+        android:inputType="phone"
+        android:layout_weight="1"
+        android:id="@+id/addContacts_phoneNumberET"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/add_contact_activity_button_save"
+        android:textAllCaps="false"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/addContacts_saveBtn"/>
+
+</LinearLayout>

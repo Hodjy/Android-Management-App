@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_activity_manageThisApp"
+        android:textSize="20sp"
+        android:id="@+id/settings_myAppTextView"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_activity_changeLanguage"
+        android:textSize="20sp"
+        android:id="@+id/settings_languageTextView"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_activity_accessibility_settings"
+        android:textSize="20sp"
+        android:id="@+id/settings_accessibilityTextView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_activity_manageApplication"
+        android:textSize="20sp"
+        android:id="@+id/settings_applicationsTextView"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/settings_phoneSettings"
+        android:textSize="20sp"
+        android:id="@+id/settings_settingsTextView"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

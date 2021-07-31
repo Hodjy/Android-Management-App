@@ -2,20 +2,53 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.managementapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ManagementApp">
-        <activity android:name=".MessageActivity"
-            android:label="Message Activity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+        android:theme="@style/Theme.Brilliant">
+        <activity android:name=".displayContactActivity"
+            android:label="@string/display_contact_activityTile"
+            android:parentActivityName=".AddContactsActivity"></activity>
+        <activity
+            android:name=".displayAlarmActivity"
+            android:label="@string/displayAlarm_activityTitle"
+            android:parentActivityName=".AlarmClockActivity" />
+        <activity
+            android:name=".displayEventActivity"
+            android:label="@string/displayEvent_activityTitle"
+            android:parentActivityName=".CalendarActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_activityTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CallActivity"
+            android:label="@string/call_activityTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/calender_activityTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlarmClockActivity"
+            android:label="@string/alarmClock_activityTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddContactsActivity"
+            android:label="@string/addContacts_activityTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/message_activityTitle"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

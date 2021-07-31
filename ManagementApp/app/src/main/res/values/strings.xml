@@ -1,17 +1,64 @@
 <resources>
-    # Main activity strings:
     <string name="app_name">ManagementApp</string>
-    <string name="gps_text">Find where I am</string>
-    <string name="calendar_text">Manage calendar</string>
-    <string name="message_text">Send Message</string>
-    <string name="alarm_clock_text">Set an alarm</string>
+    <string name="gps_text">Where I am</string>
+    <string name="calendar_text">Calendar</string>
+    <string name="message_text">Message</string>
+    <string name="alarm_clock_text">Set alarm</string>
     <string name="add_contact_text">Add contact</string>
-    <string name="phone_statistics_text">Phone statistics</string>
-
-    # Message activity strings:
+    <string name="next_events_msg">Your next events:</string>
+    <string name="call_text">Call</string>
+    <string name="settings_text">Settings</string>
+    <string name="main_activity_turnOnGps">Please turn on your GPS</string>
     <string name="message_to_send_hint">Enter your message here</string>
     <string name="send_message">Send</string>
-    <string name="next_events_msg">Your next events:</string>
-
+    <string name="message_activity_howToSpeak">Please speak slowly and clearly</string>
+    <string name="message_activity_emptyMsg">Your message is empty please enter a message</string>
+    <string name="alarm_clock_activity_title">Choose the time:</string>
+    <string name="alarm_clock_activity_button_save">Save new alarm</string>
+    <string name="alarmClock_day1">Su</string>
+    <string name="alarmClock_day2">M</string>
+    <string name="alarmClock_day3">Tu</string>
+    <string name="alarmClock_day4">W</string>
+    <string name="alarmClock_day5">Th</string>
+    <string name="alarmClock_day6">F</string>
+    <string name="alarmClock_day7">Sa</string>
+    <string name="add_contact_activity_title">Add a new contact:</string>
+    <string name="add_contact_activity_first_name">First Name:</string>
+    <string name="add_contact_activity_last_name">Last Name:</string>
+    <string name="add_contact_activity_number">Phone Number:</string>
+    <string name="add_contact_activity_button_save">Save</string>
+    <string name="calendar_activity_instructions">Schedule a new Event:</string>
+    <string name="calendar_activity_enterEventDetails">Enter the event details:</string>
+    <string name="save_btn_text">Save</string>
+    <string name="calendar_activity_enterEventTitle">Enter Event Title:</string>
+    <string name="calendar_activity_enterEventStartingTime">Enter event start time:</string>
+    <string name="calendar_activity_enterEventEndTime">Enter event end time:</string>
+    <string name="calendar_activity_enterEventDate">Enter event date:</string>
+    <string name="dateFormatting">MM/dd/yyyy</string>
+    <string name="timeFormatting">HH:mm</string>
+    <string name="settings_activity_accessibility_settings">Manage your accessibility settings</string>
+    <string name="settings_activity_changeLanguage">Change your phone language</string>
+    <string name="settings_activity_manageApplication">Manage your applications</string>
+    <string name="settings_phoneSettings">Open phone settings</string>
+    <string name="addContacts_activityTitle">New Contact</string>
+    <string name="alarmClock_activityTitle">Alarm Clock</string>
+    <string name="message_activityTitle">Message</string>
+    <string name="calender_activityTitle">Calendar Event</string>
+    <string name="call_activityTitle">Phone</string>
+    <string name="settings_activityTitle">Settings</string>
+    <string name="card_view_eventTitle">Title:</string>
+    <string name="card_view_eventDescription">Description:</string>
+    <string name="card_view_eventDate" translatable="false">1/1/1970     00:00</string>
+    <string name="settings_activity_manageThisApp">Manage this app settings</string>
+    <string name="displayEvent_activityTitle">Display Event</string>
+    <string name="display_event_activity_date">Date:</string>
+    <string name="display_event_activity_time">Time:</string>
+    <string name="calendar_activity_fill_forms">Please fill the required forms.</string>
+    <string name="displayAlarm_activityTitle">Display Alarm Clock</string>
+    <string name="display_alarm_activity_inDays">In days:</string>
+    <string name="display_alarm_activity_didntchooseDays">You didnt choose days so the alarm will ring every day</string>
+    <string name="display_contact_activityTile">Display Contact</string>
+    <string name="display_contact_activity_full_name">Full name:</string>
+    <string name="addContacts_activity_pleaseInsert">Please insert first name and phone number</string>
 
 </resources>

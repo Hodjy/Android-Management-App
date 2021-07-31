@@ -23,175 +23,250 @@
         android:layout_weight="1"
         android:textStyle="bold"/>
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5">
+        android:layout_weight="4.5"
+        android:id="@+id/main_activity_eventsRecyclerView">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
 
-    //TODO CHANGE TO TABLE
-    <GridLayout
+    <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:columnCount="3"
-        android:rowCount="2"
-        android:id="@+id/appsGridLayout"
-        android:layout_weight="10">
+        android:layout_weight="0.5"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/gpsLayout">
+            android:id="@+id/gpsLayout"
+            android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/gpsImageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/icon_gps"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/gpsTextView"
                 android:text="@string/gps_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/calendarLayout">
+            android:id="@+id/calendarLayout"
+            android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/calendarImageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/icon_calender"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/calendarTextView"
                 android:text="@string/calendar_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/sendMessageLayout">
+            android:id="@+id/sendMessageLayout"
+            android:layout_weight="1">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:id="@+id/messageImageButton"
                 android:src="@drawable/icon_message"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/messageTextView"
                 android:text="@string/message_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/alarmClockLayout">
+            android:id="@+id/alarmClockLayout"
+            android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/alarmClockImageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/icon_alarm_clock"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/alarmClockTextView"
                 android:text="@string/alarm_clock_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/addContactLayout">
+            android:id="@+id/addContactLayout"
+            android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/addContactImageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:src="@drawable/icon_add_contact"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/addContactTextView"
                 android:text="@string/add_contact_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/phoneStatisticsLayout">
+            android:id="@+id/callLayout"
+            android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/phoneStatisticsImageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/icon_phone_statistics"
-                android:scaleType="fitXY" />
+                android:id="@+id/callImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_call"
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/phoneStatisticsTextView"
-                android:text="@string/phone_statistics_text"
+                android:layout_height="0dp"
+                android:id="@+id/callTextView"
+                android:text="@string/call_text"
                 android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
-    </GridLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
 
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="3.6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/settingsLayout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/settingsImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_settings"
+                android:scaleType="fitXY"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/settingsTextView"
+                android:text="@string/settings_text"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

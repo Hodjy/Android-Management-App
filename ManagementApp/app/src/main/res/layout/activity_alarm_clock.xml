@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/alarm_clock_activity_title"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top|center"
+        android:textSize="30sp"
+        android:layout_weight="10"
+        android:id="@+id/alarm_clock_time_picker"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:weightSum="8">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/circular_btn_style"
+            android:textOff="@string/alarmClock_day1"
+            android:textOn="@string/alarmClock_day1"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day1_btn"
+            android:checked="true"/>
+
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textOff="@string/alarmClock_day2"
+            android:textOn="@string/alarmClock_day2"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day2_btn"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textOff="@string/alarmClock_day3"
+            android:textOn="@string/alarmClock_day3"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day3_btn"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textOff="@string/alarmClock_day4"
+            android:textOn="@string/alarmClock_day4"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day4_btn"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textOff="@string/alarmClock_day5"
+            android:textOn="@string/alarmClock_day5"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day5_btn"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textOff="@string/alarmClock_day6"
+            android:textOn="@string/alarmClock_day6"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day6_btn"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_btn_style"
+            android:layout_height="wrap_content"
+            android:textOff="@string/alarmClock_day7"
+            android:textOn="@string/alarmClock_day7"
+            android:textColor="?attr/colorOnSecondary"
+            android:id="@+id/alarm_clock_day7_btn"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/alarm_clock_activity_button_save"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:id="@+id/alarm_clock_save_btn"/>
+
+</LinearLayout>
+
